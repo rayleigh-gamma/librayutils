@@ -13,8 +13,11 @@ set(NAME "rayutils")
 
 project(${NAME} VERSION 0.1.0 LANGUAGES C)
 
-include_directories("./include")
 add_library(${NAME})
+
+target_include_directories(${NAME} PUBLIC
+	"./include"
+)
 
 target_sources(${NAME} PRIVATE
 	"./src/diagnostics/log.c"

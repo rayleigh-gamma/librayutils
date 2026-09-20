@@ -28,6 +28,9 @@
 		__VA_ARGS__, strerror(errno)				 																											\
 	)
 
+#define RAY_LOG_METADATA_CODE_SYS_CUSTOM 1
+#define RAY_LOG_METADATA_CODE_CAT_CUSTOM 1
+
 /* Options */
 enum {
 	RAY_LOG_METADATA_OPTION_WARNING = 1 << 0,
