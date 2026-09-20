@@ -33,14 +33,14 @@
 		*stack = calloc(1, sizeof(type_name##Stack)); 												\
 																									\
 		if (*stack == NULL) { 																		\
-			RAYUTILS_LOG_ERRNO(errno, "calloc(1, %zu)", sizeof(type_name##Stack)); 					\
+			RAY_LOG_ERRNO(errno, "calloc(1, %zu)", sizeof(type_name##Stack)); 						\
 			return false; 																			\
 		} 																							\
 																									\
 		(*stack)->elements = malloc(sizeof(type)); 													\
 																									\
 		if ((*stack)->elements == NULL) { 															\
-			RAYUTILS_LOG_ERRNO(errno, "malloc(%zu)", sizeof(type)); 								\
+			RAY_LOG_ERRNO(errno, "malloc(%zu)", sizeof(type)); 										\
 			return false; 																			\
 		} 																							\
 																									\
@@ -56,7 +56,7 @@
 		type *elements_new = realloc((*stack)->elements, elements_new_size); 						\
 																									\
 		if (elements_new == NULL) { 																\
-			RAYUTILS_LOG_ERRNO(errno, "realloc(%p, %zu)", (*stack)->elements, elements_new_size); 	\
+			RAY_LOG_ERRNO(errno, "realloc(%p, %zu)", (*stack)->elements, elements_new_size); 		\
 			return false; 																			\
 		} 																							\
 																									\
