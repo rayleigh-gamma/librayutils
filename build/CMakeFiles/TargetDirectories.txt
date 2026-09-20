@@ -1,3 +1,0 @@
-/mnt/c/Users/Rayleigh/Development/Repositories/librayutils/build/CMakeFiles/rayutils.dir
-/mnt/c/Users/Rayleigh/Development/Repositories/librayutils/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/Rayleigh/Development/Repositories/librayutils/build/CMakeFiles/rebuild_cache.dir

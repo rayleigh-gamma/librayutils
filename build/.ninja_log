@@ -1,7 +1,0 @@
-# ninja log v7
-18	133	1789914294226792500	CMakeFiles/rayutils.dir/src/io.c.o	6a498605eb519302
-220	288	1789915725573605500	librayutils.a	eacf87f389ddf947
-30	162	1789917506315528400	CMakeFiles/rayutils.dir/src/diagnostics/log.c.o	9f97f9fd4451b087
-41	218	1789917552980964900	CMakeFiles/rayutils.dir/src/diagnostics/log.c.o	9f97f9fd4451b087
-52	245	1789917552992769800	CMakeFiles/rayutils.dir/src/io.c.o	b1fc068ae2164ef0
-263	346	1789917553201536900	librayutils.a	60f4b53064a59e70
