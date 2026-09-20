@@ -5,6 +5,10 @@
  * See LICENSE for licensing information.
  */
 
+#ifdef _WIN32
+#define _CRT_SECURE_NO_WARNINGS 1
+#endif
+
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
