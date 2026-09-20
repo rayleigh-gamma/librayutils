@@ -40,6 +40,6 @@ enum {
 	RAY_LOG_METADATA_OPTION_VERBOSE = 1 << 4,
 };
 
-void ray_log(const RayU8 metadata, FILE *const file, const RaySpan span, char *const message_format, ...);
+void ray_log(const RayU32 metadata, FILE *const file, const RaySpan span, char *const message_format, ...);
 
 #endif /* RAYUTILS_DIAGNOSTICS_LOG_H */

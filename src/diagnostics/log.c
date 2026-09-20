@@ -14,7 +14,7 @@
 #define RAY_LOG_METADATA_OPTIONS_MASK 0x00ff
 
 void
-ray_log(const RayU8 metadata, FILE *const file, const RaySpan span, char *const message_format, ...)
+ray_log(const RayU32 metadata, FILE *const file, const RaySpan span, char *const message_format, ...)
 {
 	assert(file != NULL);
 	assert(message_format != NULL);
