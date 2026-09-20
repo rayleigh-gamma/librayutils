@@ -1,3 +1,10 @@
+/*
+ * I/O operations.
+ * 
+ * Copyright (C) 2026 Rayleigh Gamma
+ * See LICENSE for licensing information.
+ */
+
 #ifndef RAYUTILS_IO_H
 #define RAYUTILS_IO_H
 

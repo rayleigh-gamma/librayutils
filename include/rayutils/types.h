@@ -1,3 +1,8 @@
+/*
+ * Copyright (C) 2026 Rayleigh Gamma
+ * See LICENSE for licensing information.
+ */
+
 #ifndef RAYUTILS_TYPES_H
 #define RAYUTILS_TYPES_H
 

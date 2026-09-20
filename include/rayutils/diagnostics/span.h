@@ -1,3 +1,10 @@
+/*
+ * Used in <rayutils/diagnostics/log.h> for the location format.
+ * 
+ * Copyright (C) 2026 Rayleigh Gamma
+ * See LICENSE for licensing information.
+ */
+
 #ifndef RAYUTILS_DIAGNOSTICS_SPAN_H
 #define RAYUTILS_DIAGNOSTICS_SPAN_H
 

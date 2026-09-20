@@ -1,3 +1,11 @@
+/*
+ * Log macros, you can define your own systems, categories and reasons using
+ * enums.
+ * 
+ * Copyright (C) 2026 Rayleigh Gamma
+ * See LICENSE for licensing information.
+ */
+
 #ifndef RAYUTILS_DIAGNOSTICS_LOG_H
 #define RAYUTILS_DIAGNOSTICS_LOG_H
 

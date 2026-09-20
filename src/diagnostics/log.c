@@ -1,3 +1,10 @@
+/*
+ * Log function implementation.
+ * 
+ * Copyright (C) 2026 Rayleigh Gamma
+ * See LICENSE for licensing information.
+ */
+
 #include <assert.h>
 #include <stdarg.h>
 

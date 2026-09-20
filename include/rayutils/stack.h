@@ -1,3 +1,10 @@
+/*
+ * Single-header style dynamic stack.
+ * 
+ * Copyright (C) 2026 Rayleigh Gamma
+ * See LICENSE for licensing information.
+ */
+
 #ifndef RAYUTILS_STACK_H
 #define RAYUTILS_STACK_H
 
@@ -8,18 +15,18 @@
 
 #include "rayutils/diagnostics/log.h"
 
-#define RAYUTILS_STACK_DECLARATION(type, type_name, function_name)									\
-	typedef struct { 																				\
-		type *elements; 																			\
-		size_t count; 																				\
-		void (*free_function)(type *const element); 												\
-	} type_name##Stack; 																			\
-																									\
-	bool function_name##_stack_create(type_name##Stack **const stack); 								\
-	bool function_name##_stack_push(type_name##Stack **const stack, type const element);			\
+#define RAY_STACK_DECLARATION(type, type_name, function_name)								\
+	typedef struct { 																		\
+		type *elements; 																	\
+		size_t count; 																		\
+		void (*free_function)(type *const element); 										\
+	} type_name##Stack; 																	\
+																							\
+	bool function_name##_stack_create(type_name##Stack **const stack); 						\
+	bool function_name##_stack_push(type_name##Stack **const stack, type const element);	\
 	void function_name##_stack_free(type_name##Stack **const stack);
 
-#define RAYUTILS_STACK_IMPLEMENTATION(type, type_name, function_name, _free_function) 				\
+#define RAY_STACK_IMPLEMENTATION(type, type_name, function_name, _free_function) 					\
 	bool function_name##_stack_create(type_name##Stack **const stack) { 							\
 		assert(stack != NULL); 																		\
 																									\

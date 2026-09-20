@@ -1,3 +1,10 @@
+/*
+ * I/O operations.
+ * 
+ * Copyright (C) 2026 Rayleigh Gamma
+ * See LICENSE for licensing information.
+ */
+
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
