@@ -26,13 +26,13 @@ ray_io_file_create(const char *const path, const RayBool create_if_exists, const
 
 	if (file == NULL)
 	{
-		RAY_LOG_ERRNO(verbose_log, "fopen(\"%s\", \"%c\")\n", path, open_option);
+		RAY_LOG_ERRNO(verbose_log, "fopen(\"%s\", \"%c\")", path, open_option);
 		return false;
 	}
 
 	if (fclose(file) == EOF)
 	{
-		RAY_LOG_ERRNO(verbose_log, "fclose(%p)\n", file);
+		RAY_LOG_ERRNO(verbose_log, "fclose(%p)", file);
 		return false;
 	}
 
@@ -49,7 +49,7 @@ ray_io_file_read(char *const path, char **buffer, const bool verbose_log)
 
 	if (file == NULL)
 	{
-		RAY_LOG_ERRNO(verbose_log, "fopen(\"%s\", \"rb\")\n", path);
+		RAY_LOG_ERRNO(verbose_log, "fopen(\"%s\", \"rb\")", path);
 		return false;
 	}
 
