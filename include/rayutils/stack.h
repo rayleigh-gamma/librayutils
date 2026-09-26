@@ -64,7 +64,7 @@
 		{																\
 			for (size_t index = 0; index < stack->count; ++index)		\
 			{															\
-				stack->free_function(stack->elements[index]);			\
+				stack->free_function(&stack->elements[index]);			\
 			}															\
 		}																\
 																		\
@@ -80,7 +80,8 @@
 		{																		\
 			for (size_t index = 0; index < stack->count; ++index)				\
 			{																	\
-				stack->free_function(&stack->elements[index]);					\
+				stack->free_function(stack->elements[index]);					\
+				free(stack->elements[index]);									\
 			}																	\
 		}																		\
 																				\
