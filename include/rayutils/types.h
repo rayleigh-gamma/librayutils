@@ -19,6 +19,8 @@ typedef int16_t RayS16;
 typedef int32_t RayS32;
 typedef int64_t RayS64;
 typedef size_t RaySize;
+typedef float RayF32;
+typedef double RayF64;
 typedef bool RayBool;
 
 #endif /* RAYUTILS_TYPES_H */
