@@ -26,7 +26,7 @@
 	bool function_name##_stack_push(type_name##Stack *const stack, type const element);		\
 	void function_name##_stack_free(type_name##Stack *const stack);
 
-#define RAY_STACK_POINTER_IMPLEMENTATION(type, type_name, function_name, _free_function) 	\
+#define RAY_STACK_IMPLEMENTATION(type, type_name, function_name, _free_function) 			\
 	bool function_name##_stack_init(type_name##Stack *const stack) { 						\
 		stack->elements = malloc(sizeof(type)); 											\
 																							\
