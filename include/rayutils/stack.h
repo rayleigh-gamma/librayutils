@@ -15,7 +15,7 @@
 
 #include "rayutils/diagnostics/log.h"
 
-#define RAY_STACK_POINTER_DECLARATION(type, type_name, function_name)						\
+#define RAY_STACK_DECLARATION(type, type_name, function_name)								\
 	typedef struct { 																		\
 		type *elements; 																	\
 		size_t count; 																		\
