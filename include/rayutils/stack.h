@@ -29,6 +29,7 @@
 #define RAY_STACK_IMPLEMENTATION(type, type_name, function_name, _free_function) 			\
 	bool function_name##_stack_init(type_name##Stack *const stack) { 						\
 		stack->elements = malloc(sizeof(type)); 											\
+		stack->count = 0;																	\
 																							\
 		if (stack->elements == NULL) { 														\
 			RAY_LOG_ERRNO(errno, "malloc(%zu)", sizeof(type)); 								\
